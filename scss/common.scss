@@ -1,0 +1,40 @@
+$white: #ffffff;
+$light_grey: #eeeeee;
+$darker_grey: #aaaaaa;
+$grey: #cccccc;
+$light_blue: #0092ff;
+$red: red;
+$green: green;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin flex() {
+    display: -webkit-box;   
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    display: flex;         
+}
+@mixin flex_wrap() {
+    @include flex();
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@mixin flex_item() {
+    flex: 1 0 auto;
+    -webkit-box-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+}
+
+.board {
+    @include border-radius(8px);
+    background: $light_grey;
+    padding: 20px 5%;
+    margin-top: 20px;
+}
