@@ -1,5 +1,5 @@
 # MemoBoard
-This is an example of react app. 
+This is an example of ReactJS app. 
 
 ## Setup
 * install NodeJS
